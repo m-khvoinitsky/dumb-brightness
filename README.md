@@ -7,6 +7,23 @@ It just reads files `brightness` and `max_brightness` (which are usually found s
 
 It avoids running multiple instances of itself (via flock) and properly updates previous notification, both separately for different working directories.
 
+## Installation
+### Archlinux
+There is an [AUR package](https://aur.archlinux.org/packages/dumb-brightness-git).
+
+Install using Your Favorite [AUR Helper](https://wiki.archlinux.org/index.php/AUR_helpers):
+```
+your-favorite-aur-helper -S dumb-brightness-git
+```
+Build and install manually:
+```
+cd /tmp/
+git clone https://aur.archlinux.org/dumb-brightness-git.git
+cd dumb-brightness-git/
+makepkg
+sudo pacman -U ./dumb-brightness-git-*.pkg.tar.*
+```
+
 ## Usage
 ### Basic usage
 ```sh
