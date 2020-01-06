@@ -109,6 +109,7 @@ fn main() {
             .body(format!("{}%", new_percent_live).as_str())
             .icon(opt.icon.as_str())
             .hint(notify_rust::NotificationHint::CustomInt("value".to_string(), new_percent_live as i32))
+            .timeout(notify_rust::Timeout::Milliseconds((opt.duration * 1000f64) as u32))
             .id(prev_id)
             .show().unwrap();
         prev_id = notification.id();

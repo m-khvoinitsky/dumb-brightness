@@ -21,9 +21,9 @@ dumb-brightness -w /sys/class/backlight/intel_backlight --increase 10
 dumb-brightness -w /sys/class/backlight/intel_backlight --decrease 10
 ```
 
-### More features: notification icon, title and smooth transition:
+### More features: notification icon, title, duration and smooth transition:
 ```sh
-dumb-brightness -w /sys/class/backlight/intel_backlight --icon display-brightness-symbolic --decrease 10 --steps 10 --step-interval 10 --title 'Screen Brightness'
+dumb-brightness -w /sys/class/backlight/intel_backlight --icon display-brightness-symbolic --decrease 10 --steps 10 --step-interval 10 --title 'Screen Brightness --duration 1.5'
 dumb-brightness -w /sys/devices/platform/applesmc.768/leds/smc::kbd_backlight --icon keyboard-brightness-symbolic --increase 10 --steps 10 --step-interval 10 --title 'Keyboard Brightness'
 ```
 
