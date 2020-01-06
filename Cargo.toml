@@ -1,0 +1,10 @@
+[package]
+name = "dumb-brightness"
+version = "0.1.0"
+authors = ["Mikhail Khvoinitsky"]
+edition = "2018"
+
+[dependencies]
+structopt = { version = "0.3", default-features = false }
+notify-rust = "3.6.3"
+nix = "0.16.1"
